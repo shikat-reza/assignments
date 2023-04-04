@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>My Blog - Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-
-    <h2>Registration Form</h2>
-    <form method="post" action="verify.php">
-        First Name: <input type="text" name="first_name">
-        <span class="error">* <?php echo $first_nameErr;?></span>
-        <br><br> Last Name: <input type="text" name="last_name">
-        <span class="error">* <?php echo $last_nameErr;?></span>
-        <br><br> Email: <input type="email" name="email">
-        <span class="error">* <?php echo $emailErr;?></span>
-        <br><br> Password: <input type="password" name="password">
-        <span class="error">* <?php echo $passwordErr;?></span>
-        <br><br> Confirm Password: <input type="password" name="confirm_password">
-        <span class="error">* <?php echo $confirm_passwordErr;?></span>
-        <br><br>
-        <input type="submit" name="submit" value="Submit">
-    </form>
-
-
+	<header>
+		<div class="logo">My Blog</div>
+		<nav>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="blog.php">Blog</a></li>
+				<li><a href="contact.php">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="featured-post">
+			<h2>Featured Post</h2>
+			<div class="post-image">
+				<img src="https://via.placeholder.com/350x150" alt="Featured Post Image">
+			</div>
+			<h3>Post Title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+			<a href="#">Read More</a>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
 </body>
-
 </html>
